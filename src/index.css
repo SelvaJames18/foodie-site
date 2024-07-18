@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.text-field {
+  width: 220px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: small;
+}
+
+.btn {
+  background-color: #ea580c;
+  padding: 4px 24px;
+  border-radius: 50px;
+  outline: 2px solid #ea580c;
+  position: relative;
+  box-shadow:
+    -2px -2px 0 0 #ea580c,
+    inset -4px -4px 0 0 #fecaca;
+}
+
+.btn-2 {
+  background-color: #ffffff;
+  padding: 4px 24px;
+  border-radius: 50px;
+  outline: 2px solid #ffffff;
+  position: relative;
+  box-shadow:
+    -2px -2px 0 0 #ffffff,
+    inset -4px -4px 0 0 #e81e5a;
+}
+
+.bg {
+  background-image: linear-gradient(#e81e5b9d, #e81e5a), url(assets/Map-UI.png.webp);
+}
+
+.relative img {
+  width: 200px !important;
+  max-width: 200px !important;
+}
+
+video {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  video {
+    position: absolute;
+    top: 0;
+    left: 14px;
+  }
+}
